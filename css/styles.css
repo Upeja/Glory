@@ -942,6 +942,15 @@ h1, h2, h3, h4, h5 {
   line-height: 1.6;
 }
 
+.service-full-desc {
+  font-size: 14px;
+  color: var(--mid-gray);
+  line-height: 1.75;
+  border-left: 3px solid;
+  border-image: var(--gradient-brand) 1;
+  padding-left: 14px;
+}
+
 .service-full-list {
   display: flex;
   flex-direction: column;
