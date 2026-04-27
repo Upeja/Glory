@@ -236,15 +236,20 @@ h1, h2, h3, h4, h5 {
   gap: 12px;
 }
 
-.brand-logo {
-  height: 48px;
+.navbar-logo {
+  height: 52px;
   width: auto;
+  display: block;
+  object-fit: contain;
+  transition: var(--transition);
+  /* Make logo visible on dark hero background */
+  filter: brightness(0) invert(1);
 }
 
-.brand-logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
+.navbar.scrolled .navbar-logo {
+  height: 44px;
+  /* Restore original colors on white navbar */
+  filter: none;
 }
 
 .brand-name {
